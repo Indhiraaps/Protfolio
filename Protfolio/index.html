@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indhira PS | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="stars"></div>
+    <div class="stars2"></div>
+
+    <nav class="navbar static-nav">
+        <div class="logo">INDHIRA</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <div class="nav-socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Indhiraaps" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <button class="connect-btn">Let's Connect</button>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="welcome-tag">Welcome to my Portfolio</span>
+            <h1>Hi! I'm <span id="typing"></span></h1>
+            <p>Final-year BCA student @ NGM College. Specialized in Python and AI Research. Transforming complex logic into user-centric digital solutions.</p>
+            <div class="cta-link">
+                <a href="#projects">View My Work <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="planet-glow"></div>
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/female-astronaut-floating-in-space-5633190-4693710.png" alt="Astronaut" class="floating-astronaut">
+        </div>
+    </header>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical <span>Expertise</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <p>Python (A+ Grade), C++, and logic building.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Stack</h3>
+                <p>HTML5, CSS3, JavaScript, and Flask Backend.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p>PostgreSQL (92.5%), MySQL, and Supabase.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section dark-bg">
+    <h2 class="section-title">Latest <span>Projects</span></h2>
+    <div class="projects-grid">
+        
+        <div class="project-card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1551288049-bbb65216738a?q=80&w=500');">
+                    <div class="front-content">
+                        <div class="tech-tags"><span>Supabase</span><span>Postgres</span></div>
+                        <h4>TrackNova</h4>
+                        <p>Asset Management</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <h4>TrackNova</h4>
+                    <p class="tech-stack">Supabase, HTML, CSS, JavaScript</p>
+                    <ul class="modal-list">
+                        <li>Designed a PostgreSQL (Supabase) database with full CRUD operations.</li>
+                        <li>Integrated role-based authentication and QR code functionality.</li>
+                        <li>Built a responsive analytics dashboard and optimized task management.</li>
+                    </ul>
+                    <a href="https://github.com/Indhiraaps/TrackNova" target="_blank" class="btn-github">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=500');">
+                    <div class="front-content">
+                        <div class="tech-tags"><span>Python</span><span>Flask</span></div>
+                        <h4>CATEdge</h4>
+                        <p>Testing Platform</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <h4>CATEdge</h4>
+                    <p class="tech-stack">Python, Flask, PostgreSQL, JavaScript</p>
+                    <ul class="modal-list">
+                        <li>Developed full-stack mock tests with real-time, time-bound testing.</li>
+                        <li>Leveraged PostgreSQL backend for student performance analytics.</li>
+                        <li>Built administrative CRUD modules for efficient content management.</li>
+                    </ul>
+                    <a href="https://github.com/Dhakshitaa-SK/CatEdge" target="_blank" class="btn-github">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=500');">
+                    <div class="front-content">
+                        <div class="tech-tags"><span>PHP</span><span>MySQL</span></div>
+                        <h4>SparkleHub</h4>
+                        <p>Admin Dashboard</p>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <h4>SparkleHub</h4>
+                    <p class="tech-stack">PHP, MySQL, HTML, CSS</p>
+                    <ul class="modal-list">
+                        <li>Developed admin modules to manage inventory, categories, and products.</li>
+                        <li>Implemented secure order placement and cart management functionality.</li>
+                        <li>Ensured smooth cross-device user experience through responsive testing.</li>
+                    </ul>
+                    <a href="https://github.com/Indhiraaps/SparkleHub" target="_blank" class="btn-github">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("g-d2NQHBsR-iJvswc"); // You'll get this from EmailJS dashboard
+    })();
+    </script>
+
+    <section id="contact" class="section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <p>Looking for opportunities in AI Research and Full Stack Development.</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" name="user_name" placeholder="Name" required>
+                <input type="email" name="user_email" placeholder="Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-glow" id="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Built with ✨ by Indhira PS | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
